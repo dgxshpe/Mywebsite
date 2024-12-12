@@ -2,6 +2,7 @@
 const express = require('express');
 const apiRouter = require('./server/api');
 const middleware = require('./middleware');
+const db = require('./db');
 
 const app = express();
 

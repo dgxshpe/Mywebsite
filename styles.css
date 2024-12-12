@@ -7,26 +7,14 @@ body {
 }
 
 #navbar {
-    background-color: #385236;
+    background-color: #22512b;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-#navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#navbar li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#blog h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+#new-post {
+    display: none; /* hide the new post form by default */
 }
 
 #posts-container {
@@ -37,19 +25,24 @@ body {
 
 .post {
     border-bottom: 1px solid #ccc;
-    padding: 15px;
+    padding: 10px;
 }
 
 .post h2 {
-    font-size: 18px;
-    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 0;
 }
 
 .post p {
     font-size: 16px;
+    line-height: 24px;
 }
 
-#about, #contact {
-    background-color: #f7f7f7;
-    padding: 20px;
+.post a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.post a:hover {
+    color: #23527c;
 }

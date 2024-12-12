@@ -1,5 +1,3 @@
-# models.py
-
 from app import db
 
 class BlogPost(db.Model):
@@ -9,7 +7,7 @@ class BlogPost(db.Model):
 
     def to_dict(self):
         return {
-            'id': self.id,
-            'title': self.title,
-            'content': self.content
+            "id": self.id,
+            "title": self.title,
+            "content": self.content
         }

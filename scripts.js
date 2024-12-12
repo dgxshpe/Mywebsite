@@ -33,3 +33,18 @@ function handleFormSubmission(event) {
 // Add event listeners to the form
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', handleFormSubmission);
+
+const header = document.querySelector('.sticky-header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// Optional: add a small delay before applying the styles on scroll
+setTimeout(() => {
+  header.style.transition = 'all 0.3s ease-in-out';
+}, 500);

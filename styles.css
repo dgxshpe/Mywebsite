@@ -44,11 +44,11 @@ body {
 }
 
 .rounded-profile-picture {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .progress-bar {

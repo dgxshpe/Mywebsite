@@ -1,63 +1,81 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Website</title>
+    <title>George David - Certified Scrum Product Owner</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        
+        .about-me {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .skills {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header class="sticky-header">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div class="container">
+        <div class="header">
+            <h1>George David</h1>
+            <p>Certified Scrum Product Owner</p>
+        </div>
+        
+        <section id="about-me" class="mb-5">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </section>
+        
+        <hr>
+        
+        <section id="skills" class="mb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Python Programming (90%)</p>
+                    <progress max="100" value="90" class="progress-bar"></progress>
+                </div>
+                <div class="col-md-4">
+                    <p>Red Hat Administrator (95%)</p>
+                    <progress max="100" value="95" class="progress-bar"></progress>
+                </div>
+                <div class="col-md-4">
+                    <p>Ansible (80%)</p>
+                    <progress max="100" value="80" class="progress-bar"></progress>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <!-- Blog Section -->
-    <section id="blog">
-        <h1>Latest Posts</h1>
-        <div id="posts-container"></div>
-    </section>
-
-    <!-- New Post Form -->
-    <section id="new-post">
-        <h1>New Post</h1>
-        <form id="new-post-form">
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title"><br><br>
-            <label for="content">Content:</label>
-            <textarea id="content" name="content"></textarea><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h1>About Me</h1>
-        <p>This is a simple blog website.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br><br>
-            <input type="submit" value="Send">
-        </form>
-    </section>
-
-    <!-- Scripts -->
-    <script src="scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 </body>
 </html>

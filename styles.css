@@ -1,79 +1,101 @@
-/* styles.css */
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-#navbar {
-    background-color: #22512b;
-    color: #fff;
-    padding: 10px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(to bottom, #333, #555);
+    padding: 40px 20px;
     text-align: center;
 }
 
-#new-post {
-    display: none; /* hide the new post form by default */
+.header h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-#posts-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.header p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.post {
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
+.about-me {
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.post h2 {
+.skills {
     font-weight: bold;
-    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-.post p {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.post a {
-    text-decoration: none;
-    color: #337ab7;
-}
-
-.post a:hover {
-    color: #23527c;
-}
-
-.sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+.progress-bar {
     width: 100%;
+    height: 10px;
+    border-radius: 5px;
     background-color: #333;
     color: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sticky-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sticky-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .sticky-header nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .sticky-header nav a:hover {
-    color: #ccc;
-  }
+    text-align: center;
+    padding: 0 10px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #3bc9e1;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: #3bc9e1;
+}
+
+.progress-bar::-ms-fill-level {
+    background-color: #3bc9e1;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+    
+    .about-me {
+        padding: 30px;
+    }
+    
+    .skills {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+    
+    .about-me {
+        padding: 20px;
+    }
+    
+    .skills {
+        margin-bottom: 5px;
+    }
+}

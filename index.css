@@ -1,0 +1,8 @@
+/* Add some basic styles to the site */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}

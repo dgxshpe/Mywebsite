@@ -44,9 +44,9 @@ body {
 }
 
 .rounded-profile-picture {
-    width: 25%;
+    width: 15%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
     margin-bottom: 20px;
 }

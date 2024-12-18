@@ -43,6 +43,12 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.container_about {
+    margin: 50px auto;
+    max-width: 800px;
+    padding-left: 200px;
+  }
+
 .rounded-profile-picture {
     width: 100px;
     height: 100px;

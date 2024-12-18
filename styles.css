@@ -19,9 +19,20 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(to bottom, #333, #555);
-    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
     text-align: center;
+    background-image: linear-gradient(to bottom, #333, #555);
+}
+
+.header img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 .header h1 {
@@ -43,8 +54,11 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.skills {
-    font-weight: bold;
+.rounded-profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -80,22 +94,14 @@ body {
     .about-me {
         padding: 30px;
     }
-    
-    .skills {
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 480px) {
-    .header {
-        padding: 10px;
+    .header img {
+        width: 100px;
     }
     
-    .about-me {
-        padding: 20px;
-    }
-    
-    .skills {
-        margin-bottom: 5px;
+    .about-me img {
+        width: 50%;
     }
 }

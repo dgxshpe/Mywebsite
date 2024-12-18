@@ -1,7 +1,0 @@
--- blog.db
-
-CREATE TABLE blog_posts (
-    id INTEGER PRIMARY KEY,
-    title TEXT NOT NULL,
-    content TEXT NOT NULL
-);

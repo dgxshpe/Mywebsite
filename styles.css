@@ -38,6 +38,7 @@ body {
 
 .about-me {
     padding: 40px;
+    margin: 50px auto;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -47,7 +48,12 @@ body {
     margin: 50px auto;
     max-width: 800px;
     padding-left: 200px;
-  }
+}
+
+.list-item {
+    list-style-type: decimal; /* or disc, circle, or lower-alpha */
+    padding-left: 30px; /* add indentation for each list item */
+}
 
 .rounded-profile-picture {
     width: 100px;
